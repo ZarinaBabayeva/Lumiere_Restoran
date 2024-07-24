@@ -23,12 +23,11 @@
   background-color: #faf8f1;
   position: fixed;
   top: 0;
-  right: 0;
+  right: -20%;
   box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2);
   transition: transform 5s ease-in-out;
-  transform: translateX(100%);
   z-index: 1000;
 }
 .cart.open {
-  transform: translateX(0);
+  right: 0;
 }
