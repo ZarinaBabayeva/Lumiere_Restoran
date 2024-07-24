@@ -1,0 +1,34 @@
+.head_cart {
+  width: 100%;
+  height: 45px;
+  background-color: black;
+  color: #faf8f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+.cart {
+  width: 20%;
+  height: 100vh;
+  background-color: #faf8f1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 5s ease-in-out;
+  transform: translateX(100%);
+  z-index: 1000;
+}
+.cart.open {
+  transform: translateX(0);
+}
